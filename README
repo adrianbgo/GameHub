@@ -1,0 +1,116 @@
+# GameHub: Interactive Party Games
+
+Welcome to **GameHub**, an interactive party game platform inspired by Jackbox Games. GameHub allows users to connect via mobile devices to a web-hosted game, ensuring a fun and engaging experience for all participants. This project explores the potential of generative AI in developing fully-featured applications.
+
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
+
+## Features
+
+- **Mobile App (React Native + Expo)**: Connect via QR code, play interactive games.
+- **Web Frontend**: Host the game, manage players, and control the game flow.
+- **Real-time Communication**: WebSocket integration for instant updates.
+- **CSS Modules for Styling**: Consistent and modular styling across platforms.
+
+## Installation
+
+### Prerequisites
+
+- Node.js (>=14.x)
+- Expo CLI
+- Yarn or npm
+
+### Clone the Repository
+
+```sh
+git clone https://github.com/yourusername/gamehub.git
+cd gamehub
+```
+
+### Install Dependencies
+
+For the mobile app:
+
+```sh
+cd mobile
+npm install
+```
+
+For the web frontend:
+
+```sh
+cd web
+npm install
+```
+
+For the backend server:
+
+```sh
+cd server
+npm install
+```
+
+## Usage
+
+### Running the Mobile App
+
+```sh
+cd mobile
+expo start
+```
+
+Scan the QR code with your mobile device to open the app in the Expo Go app.
+
+### Running the Web Frontend
+
+```sh
+cd web
+npm start
+```
+
+Open your browser and navigate to `http://localhost:3000` to view the host interface.
+
+### Running the Backend Server
+
+```sh
+cd server
+node server.js
+```
+
+## Project Structure
+
+```plaintext
+gamehub/
+├── mobile/       # React Native + Expo mobile app
+├── web/          # React web frontend for the host
+├── server/       # Node.js WebSocket server
+├── README.md     # Project README file
+└── package.json  # Project metadata and dependencies
+```
+
+## Contributing
+
+We welcome contributions from the community. Please follow these steps to contribute.
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a Pull Request.
+
+Please ensure your code adheres to our coding standards and includes the appropriate tests.
+
+## License
+
+This project is license under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+This project is an experiment in the use of generative AI to build a fully-featured application. Special thanks to the open-source community for the tools and libraries that make this project possible.
