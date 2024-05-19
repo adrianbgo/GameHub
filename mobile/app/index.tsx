@@ -1,9 +1,10 @@
-import { Link, useNavigation } from "expo-router";
+import { useNavigation, useRouter } from "expo-router";
 import React, { useEffect } from "react";
-import { View, Text, StyleSheet, Pressable } from "react-native";
+import { View, Text, StyleSheet, Button } from "react-native";
 
-const HomeScreen: React.FC = () => {
+const Home: React.FC = () => {
   const navigation = useNavigation();
+  const router = useRouter();
 
   useEffect(() => {
     navigation.setOptions({ headerShown: false });
@@ -12,11 +13,14 @@ const HomeScreen: React.FC = () => {
   return (
     <View style={styles.container}>
       <Text>Home Screen</Text>
-      <Link href="/details" asChild>
-        <Pressable>
-          <Text>Go to Details Page</Text>
-        </Pressable>
-      </Link>
+      <Button
+        title="Go to Details"
+        onPress={() => router.navigate("Details")}
+      />
+      <Button
+        title="Scan QR Code"
+        onPress={() => router.navigate("QRCodeScannerScreen")}
+      />
     </View>
   );
 };
@@ -29,4 +33,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HomeScreen;
+export default Home;
